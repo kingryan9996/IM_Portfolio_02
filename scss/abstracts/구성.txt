@@ -1,0 +1,5 @@
+모든 전역 변수, 함수, mixin 및 표시자
+_variables.scss
+_mixins.scss
+_functions.scss
+_placeholders.scss

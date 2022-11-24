@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/font/Poppins-Regular.woff), url(../assets/fonts/font/Poppins-Light.woff), url(../assets/fonts/font/Poppins-Medium.woff), url(../assets/fonts/font/Poppins-SemiBold.woff), url(../assets/fonts/font/Poppins-Bold.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}/*# sourceMappingURL=typography.css.map */

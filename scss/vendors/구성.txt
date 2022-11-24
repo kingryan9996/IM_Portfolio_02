@@ -1,0 +1,10 @@
+외부 라이브러리 및 프레임워크의 모든 CSS 파일을 담고 있다.
+
+_bootstrap.scss
+_jquery-ui.scss
+_select2.scss
+
+만약 이 외부 vendors의 있는 파일들을 재정의해야 하는 경우 sass 가이드라인에서는
+vendors-extensions라는 8번째 폴더를 새롭게 만들어서 각 파일별로 관리를 하는 것을 권장하고 있다.
+
+이는 외부 라이브러리 및 프레임워크의 CSS 파일을 직접적으로 편집하는 것을 피하기 위함이다.
