@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+
+    .container {
+      width: 700px;
+      margin: 0 auto;
+    }
+
+    .slide_wraper {
+      position: relative;
+      width: 660px;
+      margin: 0 auto;
+
+      overflow: hidden;
+      padding-top: 200px;
+    }
+
+    .slides {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 200px;
+      display: flex;
+      
+    }
+
+    .slides.animated {
+      transition: 0.5s ease-in-out;
+    }
+
+    .slides li {
+      width: 200px;
+      height: 200px;
+      margin:0 10px;
+      background-color: aquamarine;
+      /* position: absolute; */
+    }
+
+    .controls {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .controls span {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0 10px;
+      display: inline-block;
+
+    }
+    @media (max-width:700px) {
+        .container {
+            width: 100%;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .slide_wraper{
+            width: 100%;
+        }
+        
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="slide_wraper">
+        <ul class="slides animated">
+          <li>slide 01</li>
+          <li>slide 02</li>
+          <li>slide 03</li>
+          <li>slide 04</li>
+          <li>slide 05</li>
+        </ul>
+        <p class="controls">
+          <span class="prev">prev</span>
+          <span class="next">next</span>
+        </p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

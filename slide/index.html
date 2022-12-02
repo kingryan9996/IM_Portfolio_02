@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    ul{ 
+        animation-name: ul02e;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        margin-top: 20px;
+        margin-left: 100px;
+        display: flex;
+        justify-content: space-around;
+        background-color: aquamarine;
+        border: 3px solid blue;
+        width: 660px;
+        height: 200px;
+    }
+    @keyframes ul02e {
+        
+        100%{
+            margin-left: -100px;
+            border: 3px solid red;
+        }
+        
+    }
+    li{
+        
+        list-style: none;
+        /* border: 2px solid black; */
+        width: 200px;
+        height: 200px;
+    }
+</style>
+<body>
+    <div class="slide=wrap">
+        <ul class="slide">
+            <li id="slide02">slide1</li>
+            <li>slide2</li>
+            <li>slide3</li>
+            
+        </ul>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

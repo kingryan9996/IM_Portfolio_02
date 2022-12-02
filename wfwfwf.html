@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <article>
+        <h2>자판기</h2>
+        <div class="menu">
+            <p id="sum" data-price="1000">1000원</p>
+            <p class="btn">
+                <button data-price="300" id="300">밀크커피(300)</button>
+                <button data-price="400">고급밀크커피(400)</button>
+                <button data-price="600">블랙커피(600)</button>
+                <button data-price="1000">초기화</button>
+            </p>
+        </div>
+
+    </article>
+
+    <script>
+    let elCoffee = document.querySelectorAll(".btn > button");
+        let total = 0;
+        let allPrice = 1000;
+        function coffee (money) {
+            if(allPrice-money >= 0){
+                allPrice -= money;
+            document.getElementById("sum").innerText = allPrice;
+            }            
+            else if (allPrice-money < 0){
+                alert('잔액부족')
+            }
+           }
+           elCoffee.forEach(function(el,key){
+            el.onclick = function(){let money = Number(el.dataset.price);                
+                if(money==1000){
+                    allPrice = 1000;
+                    document.getElementById("sum").innerText = allPrice;}
+                else{
+                coffee(money);}
+            }
+        })
+        </script>
+</body>
+</html>
