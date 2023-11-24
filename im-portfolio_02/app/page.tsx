@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import styles from "@/style/app/page.module.scss";
 import Intro from "@/components/main/Intro";
 import Profile from "@/components/main/Profile";
 import Projects from "@/components/main/Projects";
@@ -11,6 +9,7 @@ import NavigationBar from "@/components/NavigationBar";
 import AppStyler from "@/components/AppStyler";
 import { fetchCollectionData } from "@/firebase";
 import { ProjectsData, SkillsData } from "@/types";
+
 export default function Home() {
   const [scrollTop, setScrollTop] = useState<boolean>(true);
   const [mySkillsData, setMySkillsData] = useState<SkillsData[]>([]);

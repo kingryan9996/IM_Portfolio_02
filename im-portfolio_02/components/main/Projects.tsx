@@ -197,22 +197,22 @@ export default function Projects({ myProjectsData }: ProjectProps) {
                         <path
                           d="M21.25 15.9136C21.25 19.3654 18.4518 22.1636 15 22.1636C11.5482 22.1636 8.75 19.3654 8.75 15.9136C8.75 12.4618 11.5482 9.66357 15 9.66357C18.4518 9.66357 21.25 12.4618 21.25 15.9136Z"
                           stroke="#FFF"
-                          stroke-width="1.5"
+                          strokeWidth="1.5"
                         ></path>
                         <path
                           d="M12.5 9.91357C12.5 9.91357 17 15.4136 18 21.4136"
                           stroke="#FFF"
-                          stroke-width="1.5"
+                          strokeWidth="1.5"
                         ></path>
                         <path
                           d="M19.5 11.9136C19.5 11.9136 14.5 15.9136 8.5 16.9136"
                           stroke="#FFF"
-                          stroke-width="1.5"
+                          strokeWidth="1.5"
                         ></path>
                         <path
                           d="M12 21.4137C12 21.4137 15.5 16.4137 21.5 17.4137"
                           stroke="#FFF"
-                          stroke-width="1.5"
+                          strokeWidth="1.5"
                         ></path>
                       </g>
                     </svg>
