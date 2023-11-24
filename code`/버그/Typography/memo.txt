@@ -1,0 +1,41 @@
+px / em / rem
+
+rem=html에 적용된 폰트의 em
+html 폰트가 20px이라면 1rem은 20px,
+1.5rem은 30px
+
+line-height 줄간격
+
+font-family : 폰트사용
+ex) 1번폰트, 2번폰트, 3번폰트;
+1번 없으면 2번, 2번도 없으면 3번써라
+
+font-weigth:폰트굵기
+기본 Regular사이즈 : 400
+숫자가 커지면 굵어짐 ( 100단위)
+400은 레귤러
+700은 볼드
+
+rgba (255, 255, 255, 1)
+마지막 a 는 투명도값 ( 0~1 )
+
+text-indent : 들여쓰기
+ex)100px, -100px
+
+text-transform
+none: 기본
+capitalize: 모든글자의 앞글자는 대문자
+uppercase : 모든글자가 대문자
+lowercase : 모든글자가 소문자
+
+text-decoration : 텍스트에 줄긋는 속성
+none : 줄없이
+underline:글자밑에
+line-through:글자중간에
+overline:글자위에
+
+font-style : 
+normal : 기본
+italic : 기울이기
+oblique : 기울이기
+

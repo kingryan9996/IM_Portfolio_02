@@ -1,0 +1,27 @@
+.boss {
+    position: relative;
+    width:0;
+    height: 0;
+}
+
+
+.boss .box1{
+    width:200px;
+    height:200px;
+    background-color: red;    
+}
+
+.boss .box2{
+    width:200px;
+    height:200px;
+    background-color: blue;    
+    display: flex;
+    position: absolute;
+    left:100px;
+}
+
+.boss .box3{
+    width:200px;
+    height:200px;
+    background-color: yellow;    
+}

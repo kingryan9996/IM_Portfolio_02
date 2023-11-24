@@ -1,0 +1,15 @@
+.Button {
+  border: 2px solid var(--green);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  transition: 0.25s;
+  border-radius: 10px;
+  &:hover {
+    background-color: var(--green);
+    color: white;
+  }
+}

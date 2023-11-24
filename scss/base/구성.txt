@@ -1,8 +1,0 @@
-프로젝트의 상용구 코드라고 부를 수 있는 내용을 담고 있다.
-
-사이트 전반에 사용될 폰트, 디폴트 스타일이 여기에 해당된다.
-
-_base.scss (HTML 요소 - html, body 등 디폴트)
-_reset.scss (브라우저 기본 CSS 초기화)
-_typography.scss (폰트)
-_animations.scss (@keyframes를 포함한 애니메이션)

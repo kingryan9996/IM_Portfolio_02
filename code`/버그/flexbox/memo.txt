@@ -1,0 +1,28 @@
+정렬하고자 하는 요소를 감싸고있는 부모에 display:flex로 디스플레이를설정
+
+방향설정 flex-direction
+가로방향 : row 반대로 row-reverse
+세로방향 : column 반대로 column-reverse
+
+flex를 사용하면 Axis가 생성됨 (축)
+선이라고 생각하면됨
+Main axis는 플렉스 디렉션의 방향에 따라 생기는 축
+Cross axis는 Main axis랑 정확히 수직으로 생성됨
+
+flex-wrap 한줄에 정렬할것인지
+
+Ex) 부모가 600px일경우 자식이 300px이 3개 있는상태에서
+flex-wrap: nowrap을 사용할 경우
+자식요소의 사이즈를 줄이더라도 부모요소안에 전부 배치하는것
+결과 : 부모는 600px그대로 자녀는 200px으로 자동으로 바뀌면서 3개가 모두 정렬됨
+
+flex-wrap: wrap을 사용할 경우
+부모요소는 600px그대로 자녀요소도 300px그대로이며 두줄로 정렬이 됨
+
+정렬방법 : '부모요소에게'
+Main-axis방향으로 정렬하고 싶다면 justify-contetn를 사용
+Cross axis방향으로 정렬하고 싶다면 align-items , align-content를 사용
+
+align-items은 wrap으로 설정하여 부모의 공간이 모자라서 여러가지 줄로 생성될 경우,
+생성된 그룸마다 Cross axis가 생김
+align-content는 wrap으로 설정해서 여러가지의 그룹이 생성되더라도 단 하나의 Cross axis으로 정렬

@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  background-image: url(../public/img/Weather-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.WeaterBox{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+width: 500px;
+}
+
+.weatherState {
+  /* width: 500px; */
+  height: 250px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+
+.locationBtn{
+  /* width: 500px; */
+  height: 80px;
+  background-color: #000;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.locationBtn button {
+  border: 1px solid yellow;
+  color: #000;
+}

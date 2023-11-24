@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.child::before {
+    content: "★";
+}
+
+.child::after {
+    display: block;
+    clear: left;
+    content: "☆";
+
+}
+
+.other {
+    background-color: black;
+    color: white;
+}
+
+/* .parent::after {
+    display: block;
+    clear: left;
+
+} */
+
+/* .parent::after {
+    display: block;
+    clear: left;
+    content: "☆";
+    clear
+} */
+
+/* .parent::after {
+    content: "";
+    display: block;
+    clear: left;
+} */
+
+.parent {
+    overflow: hidden;
+
+
+    /* width: 200px; */
+    /* height: */
+    margin: 0 auto;
+
+    width: 200px;
+    /* height: 300px; */
+
+    background-color: white;
+}
+
+p {
+    margin: 0
+}
+
+.child {
+    /* height: 500px; */
+    color: black;
+    /* width: 200px;
+    heigth: 200px; */
+    /* height: 100px;
+    w */
+    width: 100px;
+    /* heigth: 200px; */
+    text-align: center;
+}
+
+.red {
+    float: left;
+    height: 100px;
+
+    background-color: red;
+}
+
+.yellow {
+    float: left;
+
+    height: 100px;
+    background-color: yellow;
+
+}
+
+.blue {
+    float: left;
+    /* width: 100px; */
+    height: 100px;
+    background-color: blue;
+}

@@ -1,0 +1,54 @@
+.appStyler {
+  position: fixed;
+  top: var(--navigationBarPadding);
+  right: var(--navigationBarPadding);
+  transition: 0.55s;
+  z-index: 50;
+  opacity: 1;
+  scale: 1;
+  &.scrollTop {
+    z-index: -1;
+    opacity: 0;
+    scale: 0;
+  }
+  > div:nth-of-type(1) {
+    background-color: var(--slightlyDarkBackground);
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 3px 0;
+    > strong {
+      font-size: 20px;
+      line-height: 20px;
+    }
+    > div {
+      display: flex;
+      gap: 0 15px;
+      > button {
+        position: relative;
+        font-size: 16px;
+        &::after {
+          transform: scaleX(0);
+          width: 100%;
+          display: block;
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          transition: 0.5s;
+        }
+        &:hover {
+          color: var(--green);
+        }
+        &.active {
+          color: var(--green);
+          &::after {
+            border-bottom: 1px solid var(--green);
+            transform: scaleX(100%);
+          }
+        }
+      }
+    }
+  }
+}

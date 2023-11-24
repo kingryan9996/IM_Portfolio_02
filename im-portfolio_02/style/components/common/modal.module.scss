@@ -1,0 +1,59 @@
+.Dimmed {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Modal {
+  width: 500px;
+  border-radius: 10px;
+  background-color: #e9e9e9;
+  //   height: 200px;
+  max-height: 500px;
+  > div,
+  input,
+  button {
+    color: var(--black);
+  }
+  > div {
+    padding: 10px;
+    color: var(--black);
+  }
+  > .ModalHeader,
+  .ModalFooter {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  > .ModalHeader {
+    border-bottom: 1px solid var(--black);
+    position: relative;
+    > button:nth-of-type(1) {
+      aspect-ratio: 2/1;
+      border-radius: 50%;
+      position: absolute;
+      right: 10px;
+      line-height: 14px;
+      font-weight: 600;
+    }
+  }
+  > .ModalFooter {
+    border-top: 1px solid var(--black);
+    justify-content: flex-end;
+  }
+
+  > .ModalContent {
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 20px;
+    // border: 1px solid red;
+  }
+}

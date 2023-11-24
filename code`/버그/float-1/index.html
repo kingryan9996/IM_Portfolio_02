@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float 1</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <p>
+        float를 하면 요소는 block으로 바뀜(길막 못하는 블럭)
+        float를 하면 해당 열에 부족한 부분을 margin으로 자동으로 채우지 않음
+        inline,inlineblock 이든지 전부 다 block으로 바뀜
+        float하게되면 요소를 감싸고 있는 부모요소의 총 하이트값이 float된 요소만큼 줄어들게됨
+        박스안의 모든요소가 float가 되면 박스의 하이트값이 0이 되며,
+        이 후에 오는 lnline요소의 태그들은 float가 블록을 하는것처럼 float된 요소들의
+        공간을 인지하여 그 공간 다음으로 배치됨
+        해결법 : float된 자식요소를 가지고 있는 부모요소에다가 overflow:hidden을 사용하면 됨
+
+        inline박스 대표 :span
+
+        inline요소는 박스가 아님 (마진,보다,패딩을 못씀)
+        block이되면 박스가 됨</p>
+
+    <ul class="menu">
+        <li class="one">
+            <a href="#">Summary</a>
+        </li>
+        <li class="one email">
+            <a href="#">Emails</a>
+        </li>
+        <li class="one">
+            <a href="#">Files</a>
+        </li>
+        <li class="one">
+            <a href="#">Mentions</a>
+        </li>
+    </ul>
+
+</body>
+
+</html>

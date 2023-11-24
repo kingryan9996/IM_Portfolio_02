@@ -1,0 +1,119 @@
+.Projects {
+  position: relative;
+  > button:nth-of-type(1) {
+    color: var(--white);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 60px;
+    left: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > span {
+      font-size: 30px;
+      transform: translateY(-3px);
+    }
+  }
+  > div {
+    > div {
+      > .projectsContentWrapper {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        gap: 0 20px;
+        > .projectsList {
+          display: flex;
+          flex-direction: column;
+          gap: 20px 0;
+          > div {
+            width: 200px;
+            height: 100%;
+            cursor: pointer;
+            > strong {
+              white-space: nowrap;
+              font-size: 18px;
+              line-height: 20px;
+            }
+          }
+        }
+        > .projectDescription {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px 0;
+          > .imageWrap {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            > img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          > div:nth-of-type(2) {
+            height: calc(100% - 400px);
+            width: 100%;
+            padding: 10px;
+            > div:nth-of-type(1) {
+              width: 100%;
+              height: 100%;
+              padding: 0 20px;
+              text-align: center;
+              // line-height: 20px;
+              overflow-y: scroll;
+            }
+            > .linkWrap {
+              min-width: 170px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              a {
+                max-height: calc(50% - 3px);
+                display: flex;
+                align-items: center;
+                color: var(--green);
+                gap: 0 5px;
+                &:nth-last-of-type(1) {
+                  svg {
+                    scale: 1.7;
+                  }
+                }
+                &:hover {
+                  > svg {
+                    fill: var(--black);
+                    stroke: #fff;
+                    stroke: var(--green);
+                    > g {
+                      > path {
+                        fill: var(--green);
+                        stroke: var(--black);
+                        &:nth-of-type(1) {
+                          stroke: var(--black);
+                          stroke-width: 0.01;
+                        }
+                      }
+                    }
+                  }
+                  > span {
+                    color: var(--green);
+                  }
+                }
+                > svg {
+                  height: 100%;
+                  width: 40px;
+                }
+                > span {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

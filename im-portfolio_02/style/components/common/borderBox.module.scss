@@ -1,0 +1,42 @@
+.BorderBox {
+  border: 2px solid var(--green);
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--slightlyDarkBackground);
+  transition: 0.25s;
+  &.square {
+    border-radius: 10px;
+  }
+  &.circle {
+    border-radius: 50%;
+  }
+  &.active {
+    background-color: var(--green);
+  }
+  &:hover:not(.active) {
+    > strong {
+      color: var(--green);
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  > strong {
+    text-transform: capitalize;
+    transition: 0.25s;
+    position: relative;
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 0;
+      border-bottom: 1px solid var(--green);
+      transition: 0.25s;
+    }
+  }
+}

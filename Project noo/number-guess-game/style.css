@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+body {
+    display: block;
+    width:100vh;
+    height: 100vh;
+    /* background-image: url(https://ujnews.co.kr/news/data/20210106/p1065580971461530_988_thum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+    
+    font-family: 'East Sea Dokdo', cursive;
+    font-size:20px;
+}
+
+.main {
+    
+    height:100vh;
+    display:flex;
+    justify-content: space-around ;
+    align-items:center;
+    
+    position: relative;
+    
+}
+
+.blue_title {
+    color:blue;
+}
+
+
+.game-table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:700px;
+    height:700px;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-color: darkgrey;
+    opacity: 0.6;
+    font-size: 1.5em;
+}
+
+.game-table .red_title {
+    color:red;
+}

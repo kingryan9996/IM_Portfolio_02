@@ -1,0 +1,63 @@
+body {
+    box-sizing: content-box;
+    margin: 0;
+    background-color: black;
+}
+
+* {
+    margin: 0;
+}
+
+.card-user {
+    padding: 20px;
+    background-color: white;
+    size: 20px;
+    max-width: 800px;
+    max-height: 120px;
+}
+
+/* 맥스위드를 총컨텐츠의 합보다 적게 주니까 부모요소를 넘어서 밖으로 나와지는데 이게 원래 이런건지 아니면 잘못한건지  */
+
+.card-user-img {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+
+}
+
+.card-user-img,
+.card-user,
+.reword {
+    float: left;
+}
+
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+h1 {
+    color: #1F2D3D;
+    font-size: 16px;
+    font-weight: 400px;
+    margin: 0;
+    line-height: 1.25;
+}
+
+strong {
+    color: #AFB3B9;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 12px;
+}
+
+p {
+    size: 16px;
+    color: #79818B;
+}

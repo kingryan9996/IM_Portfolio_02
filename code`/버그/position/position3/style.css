@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+
+.new {
+    background-color: #fff;
+    border-radius: 4px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 670px;
+    margin-top: 32px;
+
+    text-align: center;
+}
+
+h1 {
+    padding-top: 32px;
+    font-size: 24px;
+
+}
+
+p {
+
+    padding: 4px auto 24px;
+    font-size: 15px;
+    width: auto;
+    margin: 4px 40px 24px 40px;
+
+}
+
+.memo {
+    width: 200px;
+    height: 36px;
+    border-radius: 4px;
+    border: none;
+    background-color: #F6F8FA;
+
+}
+
+form {
+    margin-bottom: 32px;
+}
+
+.sub {
+    width: 90px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2860E1;
+    color: white;
+}
+
+input {
+    padding-left: 16px;
+    margin-right: 8px;
+}
+
+.x {
+    border: none;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}

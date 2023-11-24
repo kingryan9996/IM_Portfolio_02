@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    display: flex;
+    width: 840px;
+    padding: 24px;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-image {
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: black;
+
+    overflow: hidden;
+
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.property-type strong {
+    background-color: #92174D;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.428571428571429;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 1px 8px;
+    text-transform: uppercase;
+}
+
+.property-type span {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #7D858F;
+}
+
+.property-rate {
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.25;
+
+
+}
+
+.property-rate strong {
+    font-weight: 400;
+    color: #151B26;
+}
+
+.property-rate::before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-size: contain;
+    content: '';
+    background-image: url(./icon-star.svg);
+    background-repeat: no-repeat;
+}
+
+.property-rate span {
+    color: #7D858F;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #151B26;
+}
+
+.card-detail {
+    font-size: 14px;
+    line-height: 1.142857142857143;
+    font-weight: 400;
+    color: #7D858F;
+}
+
+.sr-only {
+    position: absolute;
+    z-index: -100;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.property-detail dd span::after {
+    content: '-';
+    /* 가상요소는 기본적으로 display값이 lnline이므로 margin 탑,바텀은 줄수없지만 레프트,라이트는 줄수있으므로 하단처럼 작성  */
+    margin: 0 8px;
+}
+
+.property-detail dd span:last-child::after {
+    content: '';
+    margin: 0;
+}
+
+.property-detail div:first-child {
+    margin-bottom: 8px;
+}

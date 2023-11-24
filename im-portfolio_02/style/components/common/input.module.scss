@@ -1,0 +1,12 @@
+.Input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 2px solid var(--green-blur);
+  height: 16px;
+  border-radius: 8px;
+  outline: none;
+  position: relative;
+  &:focus {
+    border-color: var(--green);
+  }
+}

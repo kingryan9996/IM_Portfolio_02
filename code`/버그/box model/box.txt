@@ -1,0 +1,2 @@
+boder: 굵기 스타일 색상 순서는 무관 쓰기싫으면 none border-radius:보더를 둥글하게 깎아서 보이는거 top right bottom left padding: 10px 10px 20px 35px;
+탑바텀은 세트라서 padding : 10 20(탑, 바텀 10 / 라이트 레프트 20)
